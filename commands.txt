@@ -37,6 +37,38 @@ git commit -m "feat: design catalog with useMemo and complete props-drilling set
 git switch develop
 git push origin develop
 
+git checkout feature/sprint2-booking
+
+
+
+npm run lint
+npm run build
+git add .
+git commit -m 'feat: design catalog with useMemo and complete props-drilling setup'
+git push origin feature/sprint2-booking
+git checkout develop
+git merge --squash feature/sprint2-booking
+git commit -m "feat: sprint 2  booking catalog"
+git push origin develop
+git checkout main
+git merge develop
+git tag -a v2.0.0-sprint2 -m "Release version for Sprint 2"
+git pull origin main
+git push origin main --tags
+
+git checkout develop
+git checkout -b feature/sprint3-reducer-timeline
+
+
+
+
+
+
+
+
+
+
+
 
 
 
