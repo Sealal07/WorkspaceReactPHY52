@@ -1,0 +1,43 @@
+git branch
+git checkout develop
+git checkout -b feature/sprint2-booking
+
+
+
+
+
+git checkout develop
+git merge feature/sprint1-init
+git checkout main
+git merge develop
+git tag -a v1.0.0.1-sprint1 -m "Release version for Sprint 1"
+git push origin main --tags
+git branch -d feature/sprint2-booking
+git checkout develop
+git checkout -b feature/sprint2-booking
+useFetch.ts
+git add src/hooks/useFetch.ts
+git commit -m "feat: implement custom useFetch hook"
+useClickOutside.ts
+components/BookingFilters.tsx
+git add .
+git commit -m "feat: implement BookingFilters"
+
+
+
+
+
+
+
+
+components/ResourceCard.tsx
+components/SkeletonCard.tsx
+git add .
+git commit -m "feat: design catalog with useMemo and complete props-drilling setup"
+git switch develop
+git push origin develop
+
+
+
+
+
