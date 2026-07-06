@@ -33,10 +33,9 @@ git commit -m "feat: implement BookingFilters"
 components/ResourceCard.tsx
 components/SkeletonCard.tsx
 git add .
-git commit -m "feat: design catalog with useMemo 
-and complete props-drilling setup"
-git push origin feature/sprint2-booking
-
+git commit -m "feat: design catalog with useMemo and complete props-drilling setup"
+git switch develop
+git push origin develop
 
 
 
