@@ -112,6 +112,14 @@ npm install -D @tailwindcss/vite
 
 git add .
 git commit -m "fix: global setup css to tailwind"
+git checkout main
+git merge hotfix/tailwind-build
+
+git checkout -b feature/sprint5-styles
+git add .
+git commit -m "feat: styles for ActionButton and FiltersBooking"
+git push origin feature/sprint5-styles
+
 
 
 
