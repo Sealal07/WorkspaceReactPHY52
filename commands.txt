@@ -78,8 +78,37 @@ git commit -m "feat: sprint 3 useReducer workflow"
 git push origin develop
 git checkout main
 git merge develop
+:wq
 git tag -a v3.0.0-sprint3 -m "Release version for Sprint 3"
 git push origin main --tags
+
+git checkout develop
+git checkout -b feature/sprint4-dashboard-profile
+
+
+git add .
+git commit -m "feat: profile layout"
+git add .
+git commit -m "feat: develop dashboard module"
+git push origin feature/sprint4-dashboard-profile
+
+git add .
+git commit -m "test: ErrorBoundary trigger"
+
+npm run lint
+npm run build
+git add .
+git commit -m "fix: effect renders in useFetch"
+git push origin feature/sprint4-dashboard-profile
+git checkout develop
+git merge --squash feature/sprint4-dashboard-profile
+git commit -m "feat: sprint 4 completed"
+git checkout main
+git merge develop
+git tag -a v4.0.0-sprint-4-release -m "Workplace Flow v4.0"
+git push origin main --tags
+
+
 
 
 
