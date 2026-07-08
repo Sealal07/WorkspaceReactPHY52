@@ -38,10 +38,16 @@ export const Booking: React.FC = () => {
         const handleSelectResource = (id: string) => {
             navigate(`/resource/${id}`);
         };
+
+        const [shouldCrash, setShouldCrash] = useState(false);
+         if(shouldCrash){
+            throw new Error('Симуляция сбоя');
+         }
     return(
         <div>
             <div>
                 <h1>Рабочее пространство</h1>
+                <button onClick={ ()=> setShouldCrash(true)}>Тест сбоя</button>
             </div>
             <BookingFilters filters={filters} setFilters={setFilters} />
             {error && (<div>{error}</div>)}

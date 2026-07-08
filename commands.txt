@@ -92,6 +92,10 @@ git add .
 git commit -m "feat: develop dashboard module"
 git push origin feature/sprint4-dashboard-profile
 
+git add .
+git commit -m "test: ErrorBoundary trigger"
+npm run lint
+
 
 
 
