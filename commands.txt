@@ -107,8 +107,11 @@ git checkout main
 git merge develop
 git tag -a v4.0.0-sprint-4-release -m "Workplace Flow v4.0"
 git push origin main --tags
+git checkout -b hotfix/tailwind-build
+npm install -D @tailwindcss/vite
 
-
+git add .
+git commit -m "fix: global setup css to tailwind"
 
 
 
